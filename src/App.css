@@ -1,0 +1,35 @@
+.app-wrapper {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  grid-template-areas: /*две колонки, две строки  */
+  "h h"
+  "n c";
+  grid-template-rows: 60px 1fr; /*указываем, что будет 2 колонки и их размеры*/
+  grid-template-columns: 2fr 10fr;/*указываем, что будет 2 строки и их размеры*/
+  /* grid-gap: 10px; */
+}
+
+.header img {
+  width: 70px;
+}
+
+.content img  {
+  margin: 10px 10px 10px 10px;
+  width: 98%;
+}
+
+.content{
+  grid-area: c;
+  background-color: aquamarine;
+}
+
+.header {
+  grid-area: h;
+  background-color: greenyellow;
+}
+
+.nav {
+  grid-area: n;
+  background-color: burlywood;
+}
